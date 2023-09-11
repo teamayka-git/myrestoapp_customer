@@ -75,11 +75,11 @@ class _WidgetScreenMainOrderViewState extends State<WidgetScreenMainOrderView> {
             child: Column(
               children: [
                 headerWidget(context),
-                if (Responsive.isMobile(context))
-                  Obx(() => footerRightWidget()),
-                if (Responsive.isMobile(context)) footerLeftWidget(),
+                // if (Responsive.isMobile(context))
+                //   Obx(() => footerRightWidget()),
+                // if (Responsive.isMobile(context)) footerLeftWidget(),
                 mainContent(widget.statePageMaincontroller),
-                if (!Responsive.isMobile(context)) footerWidget()
+                // if (!Responsive.isMobile(context)) footerWidget()
               ],
             ),
           ),

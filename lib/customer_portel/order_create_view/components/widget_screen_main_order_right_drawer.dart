@@ -72,13 +72,11 @@ class _WidgetScreenMainOrderRightDrawerState
                   ),
                   Obx(
                     () => ListTile(
-                   
                       title: Text(
                         _stateMainGlobalcontroller.userName.value,
                         maxLines: 1,
                         overflow: TextOverflow.ellipsis,
                       ),
-                    
                     ),
                   ),
                   const Divider(),
@@ -680,7 +678,7 @@ class _WidgetScreenMainOrderRightDrawerState
                         maxLines: 3,
                         minLines: 1,
                         decoration: InputDecoration(
-                            labelText: "description".tr,
+                            labelText: "remarks".tr,
                             labelStyle: TextStyle(
                                 fontSize: 20.0,
                                 fontWeight: FontWeight.w400,
@@ -762,10 +760,8 @@ class _WidgetScreenMainOrderRightDrawerState
                 true)
             ? null
             : () {
-                  _statePageMaincontroller.createOrder(
-                      _statePageMaincontroller.currentOrderIndex.value,
-                      context);
-                 
+                _statePageMaincontroller.createOrder(
+                    _statePageMaincontroller.currentOrderIndex.value, context);
 
                 // (_statePageMaincontroller
                 //             .orders[_statePageMaincontroller
@@ -794,6 +790,7 @@ class _WidgetScreenMainOrderRightDrawerState
                       ? "create_order".tr
                       : "edit_order".tr,
                   maxLines: 1,
+                  style: TextStyle(color: Colors.white),
                 ),
               )
             : const AykaDefaultProgressbarWidget(

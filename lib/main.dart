@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:myresto_customer/customer_portel/order_create_view/screen_main_order_create.dart';
+import 'package:myresto_customer/internationalization/internationalization.dart';
 import 'package:myresto_customer/utils/custom_scroll_behaviour.dart';
 import 'package:oktoast/oktoast.dart';
 import 'package:url_strategy/url_strategy.dart';
@@ -27,6 +28,9 @@ class MyApp extends StatelessWidget {
       child: GetMaterialApp(
         title: 'NextDines',
                 scrollBehavior: MyCustomScrollBehavior(),
+                 translations: Internationalization(),
+              locale: const Locale('en', 'US'),
+              fallbackLocale: const Locale('en', 'US'),
         theme: ThemeData(
           colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
           useMaterial3: true,
