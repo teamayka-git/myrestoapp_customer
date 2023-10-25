@@ -55,15 +55,15 @@ class UrlUtils {
   String s3BucketCloudFormationUrl = "https://d31danrxwfsdiw.cloudfront.net";
    */
 
-  /* production Demo
-  String releasedDate = "[11-08-2023]";
+  // /* production Demo
+  String releasedDate = "[25-10-2023]";
   String releasedString = "Demo";
   String baseUrl = "https://nextdinedemo.nexteons.com/api/";
   String s3BucketMainUrl = "https://ayka-gold-erp.s3.ap-south-1.amazonaws.com";
   String s3BucketCloudFormationUrl = "https://d31danrxwfsdiw.cloudfront.net";
-   */
+  //  */
 
-  // /* production Darwish
+  /* production Darwish
   String releasedDate = "[24-08-2023]";
   String releasedString = "Dw demo";
   String baseUrl = "https://saasdarwishapi.nexteons.com/api/";
